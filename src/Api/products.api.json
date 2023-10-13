@@ -1,0 +1,210 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Açúcar De Coco",
+            "price250g":10,
+            "price500g":16,
+            "price1K":32
+  
+        },
+        {
+            "id": 2,
+            "name": "Ameixa Sem Caroco",
+            "price250g":9,
+            "price500g":16.50,
+            "price1K":33
+  
+        },
+        {
+            "id": 3,
+            "name": "Amendoim Sem Casca",
+            "price250g":9,
+            "price500g":15,
+            "price1K":30
+  
+        },
+        {
+            "id": 4,
+            "name": "Amêndoa",
+            "price250g":13,
+            "price500g":25,
+            "price1K":50
+  
+        },
+        {
+            "id": 5,
+            "name": "Amêndoa Defumada",
+            "price250g":15.50,
+            "price500g":29,
+            "price1K":57
+  
+        },
+        {
+            "id": 6,
+            "name": "Amêndoa Torrada",
+            "price250g":15.50,
+            "price500g":29,
+            "price1K":57
+  
+        },
+        {
+            "id": 7,
+            "name": "Amêndoa Farinha",
+            "price250g":13,
+            "price500g":25,
+            "price1K":50
+  
+        },
+        {
+            "id": 7,
+            "name": "Castanha de Caju Premium Com Sal E Sem Sal",
+            "price250g":16,
+            "price500g":30,
+            "price1K":60
+  
+        },
+        {
+            "id": 8,
+            "name": "Castanha Do Pará",
+            "price250g":19.50,
+            "price500g":18.50,
+            "price1K":37
+  
+        },
+        {
+            "id": 9,
+            "name": "Castanha Do Pará Pedacos",
+            "price250g":8.50,
+            "price500g":17,
+            "price1K":34
+  
+        },
+        {
+            "id": 10,
+            "name": "Castanha Do Pará Fatiado",
+            "price250g":15.50,
+            "price500g":30,
+            "price1K":60
+  
+        },
+        {
+            "id": 11,
+            "name": "Composto Suplementar",
+            "ingrendients":{
+               "ingrendient1": "CATUABA_30%",
+               "ingrendient2":"GUARANÁ_EM_PÓ_10%",
+               "ingrendient3":"MACA_PERUANA_30%",
+               "ingrendient4":"TRIBULUS_TERRESTRIS_30%"
+            },
+            "price250g":19.50
+        },
+        {
+            "id": 12,
+            "name": "Damasco Doce",
+            "price250g":16,
+            "price500g":31,
+            "price1K":60
+  
+        },
+        {
+            "id": 13,
+            "name": "Guarana Em Pó",
+            "price250g":18
+  
+        },
+        {
+            "id": 14,
+            "name": "Leite De Coco Em Pó",
+            "price250g":9,
+            "price500g":16,
+            "price1K":32
+  
+        },
+        {
+            "id": 15,
+            "name": "Mix De Amendoas",
+            "ingrendients":{
+              "ingrendient1": "AMÊNDOA",
+              "ingrendient2":"AMENDOIM",
+              "ingrendient3":"CASTANHA DE CAJU",
+              "ingrendient4":"DO PARÁ",
+              "ingrendient5":"CRANBERRY",
+              "ingrendient6":"NOZ E UVA PASSA"
+           },
+            "price250g":16,
+            "price500g":26,
+            "price1K":55
+  
+        },
+        {
+            "id": 16,
+            "name": "Óleo de Copaíba",
+            "price35ml":8.30
+  
+        },
+        {
+            "id": 17,
+            "name": "Milho Torrado Salgado Mostarda E Mel",
+            "price250g":10,
+            "price500g":15.50,
+            "price1K":60
+  
+        },
+        {
+            "id": 18,
+            "name": "Tamara De Israel Jumbo",
+            "price250g":9.90,
+            "price500g":18.20,
+            "price1K":36.40
+  
+        },
+        {
+            "id": 19,
+            "name": " Uva Passa Branca",
+            "price250g":7,
+            "price500g":12.75,
+            "price1K":25.50
+  
+        },
+        {
+            "id": 20,
+            "name": " Uva Passa Preta",
+            "price250g":5,
+            "price500g":9,
+            "price1K":18
+  
+        },
+        {
+            "id": 21,
+            "name": "Tempero EduGuedes",
+            "price250g":6.50,
+            "price500g":12.80,
+            "price1K":23
+  
+        },
+        {
+            "id": 22,
+            "name": "Colorau",
+            "price250g":6
+  
+        },
+        {
+            "id": 23,
+            "name": "Semente De Chia",
+            "price250g":4,
+            "price500g":7.50,
+            "price1K":15
+  
+        },
+        {
+            "id": 24,
+            "name": "Semente De Abóbora",
+            "price250g":12.60,
+            "price500g":25,
+            "price1K":48
+  
+        }
+    ]
+    }
+  
