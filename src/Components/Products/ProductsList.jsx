@@ -1,42 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
 
-function ProductsList() {
-  const [productData, setProductData] = useState([]);
-  const [loading, setLoading] = useState(true);
+class ProductList extends Component {
+  state = {
+    products: [],
+  };
 
-  useEffect(() => {
-    fetch('/api/products')
-      .then((response) => {
-        return response.text(); // Obter a resposta como texto
+  componentDidMount() {
+    axios.get('/data/products.api.json')
+      .then(response => {
+        this.setState({ products: response.data.products });
       })
-      .then((text) => {
-        console.log('Raw response text:', text); // Exibir o conteúdo como texto
-        // Agora você pode tentar analisar o texto como JSON
-        const data = JSON.parse(text);
-        setProductData(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Erro ao buscar produtos:', error);
+      .catch(error => {
+        console.error('Erro ao buscar dados da API:', error);
       });
-  }, []);
+  }
 
-  return (
-    <div>
-      <h2>Produtos</h2>
-      {loading ? (
-        <p>Carregando produtos...</p>
-      ) : (
-        <ul>
-          {productData.map((product) => (
-            <li key={product.id}>
-              {product.name} - ${product.price}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
+  render() {
+    const { products } = this.state;
+
+    return (
+      <div>
+        <h1>Lista de Produtos</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Preço 250g</th>
+              <th>Preço 500g</th>
+              <th>Preço 1K</th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product, index) => (
+              <tr key={index}>
+                <td>{product.name}</td>
+                <td>R${product.price250g}</td>
+                <td>R${product.price500g}</td>
+                <td>R${product.price1K}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 }
 
-export default ProductsList;
+export default ProductList;
