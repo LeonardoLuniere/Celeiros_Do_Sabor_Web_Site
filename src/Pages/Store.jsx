@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../Components/Header'
-import ProductsList from '../Components/Products/ProductsList'
+import React from 'react';
+import Header from '../Components/Header';
+import ProductsList from '../Components/Products/ProductsList';
 
 export default function Store() {
   return (
@@ -8,5 +8,5 @@ export default function Store() {
       <Header />
       <ProductsList />
     </div>
-  )
+  );
 }

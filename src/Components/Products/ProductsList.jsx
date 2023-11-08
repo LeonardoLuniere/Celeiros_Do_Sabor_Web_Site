@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class ProductList extends Component {
   state = {
@@ -21,8 +22,8 @@ class ProductList extends Component {
 
     return (
       <div>
-        <h1>Lista de Produtos</h1>
-        <table>
+        <h1 className='centerList'>Lista de Produtos</h1>
+        <table className="product-table">
           <thead>
             <tr>
               <th>Nome</th>
@@ -32,12 +33,14 @@ class ProductList extends Component {
             </tr>
           </thead>
           <tbody>
-            {products.map((product, index) => (
+            {Array.isArray(products) && products.map((product, index) => (
               <tr key={index}>
-                <td>{product.name}</td>
-                <td>R${product.price250g}</td>
-                <td>R${product.price500g}</td>
-                <td>R${product.price1K}</td>
+                <td>
+                  <Link to={`/store/${product.id}`}>{product.name}</Link>
+                </td>
+                <td className="price-cell">{product.price250g !== undefined ? `R$${product.price250g.toFixed(2)}` : ''}</td>
+                <td className="price-cell">{product.price500g !== undefined ? `R$${product.price500g.toFixed(2)}` : ''}</td>
+                <td className="price-cell">{product.price1K !== undefined ? `R$${product.price1K.toFixed(2)}` : ''}</td>
               </tr>
             ))}
           </tbody>

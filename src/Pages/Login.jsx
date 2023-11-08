@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Navigation from '../Components/Navigation';
 
 function Copyright(props) {
   return (
@@ -41,7 +42,7 @@ export default function SignInSide() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <><Navigation /><ThemeProvider theme={defaultTheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
@@ -52,12 +53,10 @@ export default function SignInSide() {
           sx={{
             backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
             backgroundRepeat: 'no-repeat',
-            backgroundColor: (t) =>
-              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+            backgroundColor: (t) => t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-          }}
-        />
+          }} />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
@@ -83,8 +82,7 @@ export default function SignInSide() {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
-                autoFocus
-              />
+                autoFocus />
               <TextField
                 margin="normal"
                 required
@@ -93,12 +91,10 @@ export default function SignInSide() {
                 label="Password"
                 type="password"
                 id="password"
-                autoComplete="current-password"
-              />
+                autoComplete="current-password" />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
+                label="Remember me" />
               <Button
                 type="submit"
                 fullWidth
@@ -124,6 +120,6 @@ export default function SignInSide() {
           </Box>
         </Grid>
       </Grid>
-    </ThemeProvider>
+    </ThemeProvider></>
   );
 }

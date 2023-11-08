@@ -2,11 +2,43 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #333; /* Cor de fundo da barra de cabeçalho */
+  color: #fff; /* Cor do texto */
+  padding: 10px; /* Ajuste o preenchimento conforme necessário */
 }
 
+/* Estilize o contêiner header-content */
+.header-content {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilize o título */
+.header-top h3 {
+  margin: 0; /* Remova a margem padrão */
+}
+
+/* Estilize a barra de ícones sociais */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilize os ícones sociais */
+.social-icons a {
+  margin-left: 10px; /* Espaçamento entre os ícones */
+  color: #fff; /* Cor dos ícones */
+  text-decoration: none; /* Remova sublinhado dos links */
+  font-size: 20px; /* Tamanho dos ícones */
+}
+.centerList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -59,19 +91,190 @@ td {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilize o menu de navegação */
+.navbar {
+  background-color: #333; /* Cor de fundo padrão */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para os itens do menu */
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s; /* Adicione transição de cor e transformação */
+  display: inline-block;
+}
+
+/* Estilos para alterar a cor e aplicar a escala ao passar o mouse */
+.navbar a:hover {
+  color: #ff6600; /* Nova cor quando o mouse passa sobre o item */
+  transform: scale(1.1); /* Amplie o item do menu em 10% */
+}
+
+.article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-image: linear-gradient(45deg, #07941c, #84f989);
+  min-height: 100vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* styles.css */
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Resto dos estilos do seu aplicativo... */
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
 
 @keyframes App-logo-spin {

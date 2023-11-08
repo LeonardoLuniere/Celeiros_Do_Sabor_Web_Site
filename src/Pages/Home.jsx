@@ -1,14 +1,15 @@
 import React from 'react'
-import Header from '../Components/Header'
-import About from './About'
-import Contact from './Contact'
+import Header from '../Components/Header';
+import About from '../Pages/About';
+import Contact from '../Pages/Contact';
 
-export default function Home() {
+export default function Home(products) {
   return (
     <div>
-    <Header />
-    <About />
-    <Contact />
-    </div>
+        <Header />
+        <About />
+        <Contact />
+      </div>
   )
 }
+
