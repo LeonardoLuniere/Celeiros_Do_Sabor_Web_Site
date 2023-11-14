@@ -36,7 +36,9 @@ class ProductList extends Component {
             {Array.isArray(products) && products.map((product, index) => (
               <tr key={index}>
                 <td>
-                  <Link to={`/store/${product.id}`}>{product.name}</Link>
+                  <Link to={`/store/${product.id}`}>
+                    {product.name !== undefined ? product.name : 'Nome Indisponível'}
+                  </Link>
                 </td>
                 <td className="price-cell">{product.price250g !== undefined ? `R$${product.price250g.toFixed(2)}` : ''}</td>
                 <td className="price-cell">{product.price500g !== undefined ? `R$${product.price500g.toFixed(2)}` : ''}</td>

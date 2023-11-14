@@ -3,19 +3,25 @@
         {
             "id": 1,
             "name": "Açúcar De Coco",
+            "description": "Aspecto: Pó fino e compacto. Cor: Caramelo. Aroma: Doce, semelhante ao açúcar mascavo. Sabor: Adocicado, com um leve toque de caramelo.",
             "price250g":10,
             "price500g":16,
             "price1K":32,
-            "image": "acucarDeCoco"
+            "image": "acucarDeCoco",
+            "imageUrl": "https://sophiederam.com/wp-content/uploads/2022/01/acucar-de-coco.jpg",
+            "nameUrl":"ACÚCAR DE COCO - TUDO O QUE VOCÊ PRECISA SABER",
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"]
   
         },
         {
             "id": 2,
             "name": "Ameixa Sem Caroco",
+            "description":"",
             "price250g":9,
             "price500g":16.50,
             "price1K":33,
-            "image": "AmeixaDesidratada"
+            "image": "AmeixaDesidratada",
+            "videoLinks":["https://www.youtube.com/watch?v=-YKjEpcYRd4"]
   
         },
         {
@@ -24,11 +30,13 @@
             "price250g":9,
             "price500g":15,
             "price1K":30,
-            "image": "AmendoimSemCasca"
+            "image": "AmendoimSemCasca",
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"]
   
         },
         {
             "id": 4,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa",
             "price250g":13,
             "price500g":25,
@@ -38,6 +46,7 @@
         },
         {
             "id": 5,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Defumada",
             "price250g":15.50,
             "price500g":29,
@@ -47,6 +56,7 @@
         },
         {
             "id": 6,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Torrada",
             "price250g":15.50,
             "price500g":29,
@@ -55,6 +65,7 @@
         },
         {
             "id": 7,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Farinha",
             "price250g":13,
             "price500g":25,
@@ -64,6 +75,7 @@
         },
         {
             "id": 8,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha de Caju Premium Com Sal E Sem Sal",
             "price250g":16,
             "price500g":30,
@@ -73,6 +85,7 @@
         },
         {
             "id": 9,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará",
             "price250g":19.50,
             "price500g":18.50,
@@ -82,6 +95,7 @@
         },
         {
             "id": 10,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará Pedacos",
             "price250g":8.50,
             "price500g":17,
@@ -90,6 +104,7 @@
         },
         {
             "id": 11,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará Fatiado",
             "price250g":15.50,
             "price500g":30,
@@ -109,6 +124,7 @@
         },
         {
             "id": 13,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Damasco Doce",
             "price250g":16,
             "price500g":31,
@@ -118,6 +134,7 @@
         },
         {
             "id": 14,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Guarana Em Pó",
             "price250g":18,
             "image": "GuaranaEmPó"
@@ -125,6 +142,7 @@
         },
         {
             "id": 15,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Leite De Coco Em Pó",
             "price250g":9,
             "price500g":16,
@@ -150,6 +168,7 @@
         },
         {
             "id": 17,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Óleo de Copaíba - 35ml",
             "price250g":8.30,
             "image": "ÓleodeCopaíba"
@@ -157,6 +176,7 @@
         },
         {
             "id": 18,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Milho Torrado Salgado Mostarda E Mel",
             "price250g":10,
             "price500g":15.50,
@@ -166,6 +186,7 @@
         },
         {
             "id": 19,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Tamara De Israel Jumbo",
             "price250g":9.90,
             "price500g":18.20,
@@ -175,6 +196,7 @@
         },
         {
             "id": 20,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": " Uva Passa Branca",
             "price250g":7,
             "price500g":12.75,
@@ -184,6 +206,7 @@
         },
         {
             "id": 21,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": " Uva Passa Preta",
             "price250g":5,
             "price500g":9,
@@ -193,6 +216,7 @@
         },
         {
             "id": 22,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Tempero EduGuedes",
             "price250g":6.50,
             "price500g":12.80,
@@ -202,6 +226,7 @@
         },
         {
             "id": 23,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Colorau",
             "price250g":6,
             "image": "Colorau"
@@ -209,6 +234,7 @@
         },
         {
             "id": 24,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Semente De Chia",
             "price250g":4,
             "price500g":7.50,
@@ -218,6 +244,7 @@
         },
         {
             "id": 25,
+            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Semente De Abóbora",
             "price250g":12.60,
             "price500g":25,
