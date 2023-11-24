@@ -17,8 +17,8 @@ body {
 
 .header {
   background-color: #333;
+  font-size: 0.9rem;
   color: #fff;
-  padding: 10px;
 }
 
 .header-content {
@@ -26,10 +26,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-top h3 {
-  margin: 0;
 }
 
 .social-icons {
@@ -44,6 +40,35 @@ body {
   font-size: 20px;
 }
 
+.history {
+  text-align: center; /* Centraliza o título 'History' */
+}
+
+.textP {
+  text-align: justify; /* Justifica o texto */
+  margin: 0 auto; /* Centraliza o bloco de texto */
+  max-width: 800px; /* Define uma largura máxima para o texto */
+}
+.ContactCss {
+  text-align: center; /* Centraliza todo o conteúdo do componente Contact */
+}
+
+.ContactCss h1,
+.ContactCss h2 {
+  margin: 10px 0; /* Adiciona margens para espaçamento */
+}
+/* Carousel.css */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Isso define o container para ocupar toda a altura da tela */
+}
+
+.carousel-card {
+  width: 80%;
+  max-width: 600px;
+}
 /* Tabelas */
 
 table {
@@ -209,6 +234,12 @@ td {
   margin-bottom: 15px;
 }
 
+.card-container {
+  display: flex; /* Exibe os cards em linha */
+  justify-content: space-between; /* Distribui o espaço entre os cards */
+  align-items: center;
+}
+
 .video-links {
   padding: 15px;
 }
@@ -241,3 +272,14 @@ td {
 
 
 /* Rodapé e outros estilos... */
+.home-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-map {
+  flex: 1;
+  margin-right: 20px;
+}

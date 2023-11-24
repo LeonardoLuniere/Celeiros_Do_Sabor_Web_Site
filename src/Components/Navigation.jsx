@@ -7,6 +7,7 @@ const menuItems = [
   { title: 'Produtos', link: '/store' },
   { title: 'About', link: '/about' },
   { title: 'Contato', link: '/contact' },
+  { title: '🛒', link: '/cart', icon: '🛒' }, 
 ];
 
 const Navigation = () => {

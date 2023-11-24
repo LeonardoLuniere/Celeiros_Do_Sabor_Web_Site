@@ -1,6 +1,11 @@
 import React from 'react';
 
 const ProductCard = ({ product }) => {
+  // Verifica se 'product' existe e se tem todas as propriedades necessárias
+  if (!product || !product.image || !product.name || !product.description || !product.videoLinks) {
+    return <div>Carregando...</div>;
+  }
+
   return (
     <div className="product-card">
       <img src={`/Image/${product.image}.jpg`} alt={product.name} />

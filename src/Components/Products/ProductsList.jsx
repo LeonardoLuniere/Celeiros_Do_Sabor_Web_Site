@@ -16,6 +16,7 @@ class ProductList extends Component {
         console.error('Erro ao buscar dados da API:', error);
       });
   }
+  
 
   render() {
     const { products } = this.state;

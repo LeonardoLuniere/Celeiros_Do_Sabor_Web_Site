@@ -1,0 +1,57 @@
+/* PriceCard.css */
+.price-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .price-options {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+  }
+  
+  .price-option {
+    flex: 1; /* Ocupa a mesma largura */
+  }
+  
+  .quantity-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  
+  .total {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quantity-info {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+  }

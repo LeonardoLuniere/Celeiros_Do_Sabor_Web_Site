@@ -16,104 +16,124 @@
         {
             "id": 2,
             "name": "Ameixa Sem Caroco",
-            "description":"",
+            "description":"A Ameixa sem caroço tem alto valor nutritivo, é rica em sais minerais e fonte de vitaminas A, B e C. Além de satisfazer o paladar com sua textura agradável, macia e sabor adocicado. Também apresenta sorbato de potássio em sua composição, ajudando na não oxidação das ameixas, e também na conservação dela.",
             "price250g":9,
             "price500g":16.50,
             "price1K":33,
             "image": "AmeixaDesidratada",
+            "nameUrl":"Benefícios da Ameixa - Para Que Serve? Solta o Intestino? [DICAS]",
             "videoLinks":["https://www.youtube.com/watch?v=-YKjEpcYRd4"]
   
         },
         {
             "id": 3,
             "name": "Amendoim Sem Casca",
+            "description":"O amendoim é uma fruta oleaginosa da mesma família das castanhas, das nozes e das avelãs, sendo rico em gorduras boas como o ômega-3 que ajudam a diminuir a inflamação no corpo e proteger o coração.",
             "price250g":9,
             "price500g":15,
             "price1K":30,
             "image": "AmendoimSemCasca",
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"]
+            "nameUrl":"Benefícios do Amendoim - Só Faz Bem ou Também Faz Mal? Pasta, Leite, Óleo,.. [DICAS]",
+            "videoLinks":["https://www.youtube.com/watch?v=U2iWe5UUFrc"]
   
         },
         {
             "id": 4,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa",
+            "description": "Rica em fibras, gorduras boas, vitamina E, manganês e magnésio, a semente também contém uma boa quantidade de vitamina B2 (riboflavina), fósforo e ferro. Ela também é fonte de ácido fítico, uma substância antinutricional que impede a absorção de nutrientes no organismo.",
             "price250g":13,
             "price500g":25,
             "price1K":50,
-            "image": "Amêndoa"
-  
+            "image": "Amêndoa",
+            "nameUrl":"Benefícios das AMÊNDOAS para EMAGRECER e SAÚDE! Como Usar Certo, Receitas e Dicas",
+            "videoLinks":["https://www.youtube.com/watch?v=-D6lsN66g5A"]
         },
         {
             "id": 5,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Defumada",
+            "description":"As amêndoas defumadas combinam sabor intenso com benefícios notáveis. Ricas em proteínas, vitamina E e magnésio, elas são ideais para quem busca equilíbrio no peso e energia rigorosa. Além disso, ajuda no fortalecimento imunológico e no controle do açúcar no sangue.",
             "price250g":15.50,
             "price500g":29,
             "price1K":57,
-            "image": "AmêndoaDefumada"
+            "image": "AmêndoaDefumada",
+            "nameUrl":"Saúde e Beleza- Os Benefícios da Amêndoa",
+            "videoLinks":["https://www.youtube.com/watch?v=mj0EKq7ANf4"]
   
         },
         {
             "id": 6,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Torrada",
+            "description":"Possui baixo índice glicêmico: ajuda a diminuir o nível de glicose, evitando picos de açúcar no sangue. Proporciona a saúde dos ossos: é rica em minerais como o fósforo e o cálcio que auxiliam no tratamento e prevenção de osteoporose.",
             "price250g":15.50,
             "price500g":29,
-            "price1K":57
+            "price1K":57,
+            "image": "AmêndoaTorrada",
+            "nameUrl":"27 BENEFÍCIOS DA AMÊNDOA PARA PELE E SAÚDE PARA QUE SERVE E COMO USAR",
+            "videoLinks":["https://www.youtube.com/watch?v=O4wHIHqy8a4"]
   
         },
         {
             "id": 7,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Amêndoa Farinha",
+            "description":"A Farinha de Amêndoas é feita apenas com a amêndoa, sem adição de outros ingredientes. Ideal para substituir farinhas com glúten e refinadas, uma das melhores opções para receitas Low Carb. Sabor levemente adocicado e baixo teor de carboidratos na porção.",
             "price250g":13,
             "price500g":25,
             "price1K":50,
-            "image": "AmêndoaFarinha"
+            "image": "AmêndoaFarinha",
+            "nameUrl":"Farinha de Amêndoas ENGORDA ou EMAGRECE? Como USAR CERTO!",
+            "videoLinks":["https://www.youtube.com/watch?v=YfteVGfXvP8"]
   
         },
         {
             "id": 8,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha de Caju Premium Com Sal E Sem Sal",
+            "description":"Apresenta também o selênio, um nutriente que auxilia na melhora na memória e tem a capacidade de prevenir diversas doenças. Por conter zinco em sua composição, esse tipo de castanha é fundamental para prevenir casos de anemia.",
             "price250g":16,
             "price500g":30,
             "price1K":60,
-            "image": "castanhaDeCaju"
+            "image": "castanhaDeCaju",
+            "nameUrl":"Castanha de Caju Engorda ou Emagrece? [DICAS e CUIDADOS]",
+            "videoLinks":["https://www.youtube.com/watch?v=KM_j5gr31-k"]
   
         },
         {
             "id": 9,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará",
+            "description":"A Castanha do Pará, ou também conhecida como Castanha do Brasil, é uma oleaginosa rica em antioxidantes, minerais, vitaminas e é uma das principais fontes de Selênio, que são componentes importantes para o nosso organismo.",
             "price250g":19.50,
             "price500g":18.50,
             "price1K":37,
-            "image": "castanhaDoPará"
+            "image": "castanhaDoPará",
+            "nameUrl":"Benefícios da Castanha do Pará - Para Que Serve? Faz Mal? [DICAS e CUIDADOS]",
+            "videoLinks":["https://www.youtube.com/watch?v=Ra8sm_R8Lso"]
   
         },
         {
             "id": 10,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará Pedacos",
+            "description":"A Castanha do Pará, ou também conhecida como Castanha do Brasil, é uma oleaginosa rica em antioxidantes, minerais, vitaminas e é uma das principais fontes de Selênio, que são componentes importantes para o nosso organismo.",
             "price250g":8.50,
             "price500g":17,
-            "price1K":34
+            "price1K":34,
+            "nameUrl":"Benefícios da Castanha do Pará - Para Que Serve? Faz Mal? [DICAS e CUIDADOS]",
+            "videoLinks":["https://www.youtube.com/watch?v=Ra8sm_R8Lso"]
   
         },
         {
             "id": 11,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Castanha Do Pará Fatiado",
+            "description":"A Castanha do Pará, ou também conhecida como Castanha do Brasil, é uma oleaginosa rica em antioxidantes, minerais, vitaminas e é uma das principais fontes de Selênio, que são componentes importantes para o nosso organismo.",
             "price250g":15.50,
             "price500g":30,
-            "price1K":60
+            "price1K":60,
+            "nameUrl":"Benefícios da Castanha do Pará - Para Que Serve? Faz Mal? [DICAS e CUIDADOS]",
+            "videoLinks":["https://www.youtube.com/watch?v=Ra8sm_R8Lso"]
   
         },
         {
             "id": 12,
             "name": "Composto Suplementar",
+            "description":"CATUABA_30%, GUARANÁ_EM_PÓ_10%, MACA_PERUANA_30%, TRIBULUS_TERRESTRIS_30%  ",
             "ingrendients":{
                "ingrendient1": "CATUABA_30%",
                "ingrendient2":"GUARANÁ_EM_PÓ_10%",
@@ -124,35 +144,42 @@
         },
         {
             "id": 13,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Damasco Doce",
+            "description":"Muito parecida com o pêssego, a mesma possui uma casca amarelada que pode variar entre o vermelho e o laranja. A diferença é que seu sabor é mais ácido e sua polpa, menos suculenta. O damasco é rico em vitaminas A e B, além de ser uma boa fonte de sais minerais, principalmente de ferro e potássio.",
             "price250g":16,
             "price500g":31,
             "price1K":60,
-            "image": "DamascoDoce"
+            "image": "DamascoDoce",
+            "nameUrl":"Os 10 Benefícios do Damasco Seco Para Saúde! | Dicas de Saúde",
+            "videoLinks":["https://www.youtube.com/watch?v=ZGIUzMhXibc"]
   
         },
         {
             "id": 14,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Guarana Em Pó",
+            "description":"Como eu disse, o pó é feito com as sementes do guaraná, só que trituradas. E o bom é que ele tem bastante cafeína e outros nutrientes, como vitaminas A e B1, ferro, potássio, cálcio, magnésio e fósforo.",
             "price250g":18,
-            "image": "GuaranaEmPó"
+            "image": "GuaranaEmPó",
+            "nameUrl":"Guaraná: Origem, Benefícios E Como Usar Seu Pó Para Obter Os Maiores Benefícios!| Dr. Rafael Freitas",
+            "videoLinks":["https://www.youtube.com/watch?v=pPqxQiVmTMw"]
   
         },
         {
             "id": 15,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Leite De Coco Em Pó",
+            "description":"O Leite de Coco em pó é feito com a polpa da fruta (carne de coco) e é uma excelente opção de leite vegetal. Possui vitaminas, minerais e ação antioxidante, uma ótima opção para pessoas com intolerância à lactose, alergias ou sensibilidades ao leite, além de ser um leite vegetal de fácil preparo.",
             "price250g":9,
             "price500g":16,
             "price1K":32,
-            "image": "LeiteDeCocEmPó"
+            "image": "LeiteDeCocEmPó",
+            "nameUrl":"LEITE DE COCO EM PÓ",
+            "videoLinks":["https://www.youtube.com/watch?v=WnfgjAt2tkM"]
   
         },
         {
             "id": 16,
             "name": "Mix De Amendoas",
+            "description":"AMÊNDOA , AMENDOIM,CASTANHA DE CAJU,CASTANHA Do Pará, CRANBERRY, NOZ E UVA PASSA  ",
             "ingrendients":{
               "ingrendient1": "AMÊNDOA",
               "ingrendient2":"AMENDOIM",
@@ -168,88 +195,106 @@
         },
         {
             "id": 17,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Óleo de Copaíba - 35ml",
+            "description":"O Óleo de Copaíba é super indicado para combater a acne e a oleosidade, tanto da pele, quanto do cabelo. Ele possui ação antimicrobiana e possui efeito relaxante sobre os músculos, sendo eficaz para dores musculares e até mesmo para enxaquecas.",
             "price250g":8.30,
-            "image": "ÓleodeCopaíba"
+            "image": "ÓleodeCopaíba",
+            "nameUrl":"7 BENEFICIOS DO ÓLEO DE COPAÍBA | Dr. Dayan Siebra",
+            "videoLinks":["https://www.youtube.com/watch?v=2zHHDRiKbnI"]
   
         },
         {
             "id": 18,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Milho Torrado Salgado Mostarda E Mel",
+            "description":"É uma fonte de fibras insolúveis, isso quer dizer que ele ajuda a prevenir a constipação do intestino e até reduz os níveis de gordura no sangue, diminuindo o risco de doenças cardiovasculares. O milho na quantidade correta também oferece proteínas suficientes para fornecer todos os aminoácidos essenciais à nossa saúde diária.",
             "price250g":10,
             "price500g":15.50,
             "price1K":60,
-            "image": "MilhoTorradoSalgadoMostardaEMel"
+            "image": "MilhoTorradoSalgadoMostardaEMel",
+            "nameUrl":"Milho Engorda ou Emagrece? [DICAS + CUIDADOS]",
+            "videoLinks":["https://www.youtube.com/watch?v=anbhNXfgcwg"]
   
         },
         {
             "id": 19,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Tamara De Israel Jumbo",
+            "description":"É uma fruta extraída da tamareira e é um fruta muito doce, podendo substituir o açúcar e o adoçantes em preparações culinárias. Ela é rica em antioxidantes, minerais como o ferro, potássio, cálcio e magnésio, além de ser fonte de vitaminas do complexo B.",
             "price250g":9.90,
             "price500g":18.20,
             "price1K":36.40,
-            "image": "TamaraDeIsraelJumbo"
+            "image": "TamaraDeIsraelJumbo",
+            "nameUrl":"Olha O QUE ACONTECE quando você come TÂMARA - Benefícios, Como Comer Certo e Cuidados",
+            "videoLinks":["https://www.youtube.com/watch?v=UR3BFNVOFDg"]
   
         },
         {
             "id": 20,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": " Uva Passa Branca",
+            "description":"Essa fruta desidratada é rica em antioxidantes que retardam os sinais do envelhecimento e protegem a visão dos efeitos da oxidação e do tempo.",
             "price250g":7,
             "price500g":12.75,
             "price1K":25.50,
-            "image": "UvaPassaBranca"
+            "image": "UvaPassaBranca",
+            "nameUrl":"Benefícios da UVA PASSA | Nutri Rodrigo Moreira",
+            "videoLinks":["https://www.youtube.com/watch?v=0I_eIzmQY4w"]
   
         },
         {
             "id": 21,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": " Uva Passa Preta",
+            "description":"Uvas passas contêm substâncias chamadas fito nutrientes poli fenólicos, que têm propriedades anti-inflamatórias e antibacterianas. Além disso, essa fruta desidratada é rica em antioxidantes que retardam os sinais do envelhecimento e protegem a visão dos efeitos da oxidação e do tempo. Fonte de ferro e cálcio, a uva passa também fortalece o sistema nervoso, os ossos e os dentes",
             "price250g":5,
             "price500g":9,
             "price1K":18,
-            "image": "UvaPassaPreta"
+            "image": "UvaPassaPreta",
+            "nameUrl":"Benefícios da UVA PASSA | Nutri Rodrigo Moreira",
+            "videoLinks":["https://www.youtube.com/watch?v=0I_eIzmQY4w"]
   
         },
         {
             "id": 22,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Tempero EduGuedes",
+            "description":" O tempero Edu Guedes pode ser utilizado para temperar arroz, carnes, molhos, caldos, peixes, entre outros. Ingredientes: Cebola desidratada, cenoura desidratada, alho em pó, pimentão, cúrcuma moída, manjericão, salsa em flocos, cebolinha desidratada e aroma idêntico ao natural de costela.",
             "price250g":6.50,
             "price500g":12.80,
             "price1K":23,
-            "image": "TemperoEduGuedes"
+            "image": "TemperoEduGuedes",
+            "nameUrl":"https://www.youtube.com/watch?v=FxgrBmjLiB8",
+            "videoLinks":["Dica de tempero: tempero Edu Guedes"]
   
         },
         {
             "id": 23,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Colorau",
+            "description":"Um popular condimento alimentar, é o pó do urucum, também chamado de colorífico e falso açafrão, especialmente devido à sua forte cor vermelha. Ele é feito a partir da trituração das sementes do urucuzeiro – árvore típica das regiões tropicais da América do Sul.",
             "price250g":6,
-            "image": "Colorau"
+            "image": "Colorau",
+            "nameUrl":"PODEROSO ANTI-INFLAMATÓRIO, ANTIOXIDANTE e Mais! Benefícios do Urucum, Como Usar e Dicas",
+            "videoLinks":["https://www.youtube.com/watch?v=9KyeGja2zg8"]
   
         },
         {
             "id": 24,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Semente De Chia",
+            "description":"As suas sementes têm propriedades nutricionais e, por isso, proporcionam muitos benefícios para o organismo, como desintoxicação, redução de ansiedade, colesterol e triglicérides, previne o envelhecimento precoce, fortalece os músculos e previne, ainda, a diabetes e doenças cardiovasculares.",
             "price250g":4,
             "price500g":7.50,
             "price1K":15,
-            "image": "SementeDeChia"
+            "image": "SementeDeChia",
+            "nameUrl":"https://www.youtube.com/watch?v=1c-Hpqvj0IY",
+            "videoLinks":["11 BENEFÍCIOS da Semente de CHIA"]
   
         },
         {
             "id": 25,
-            "videoLinks":["https://www.youtube.com/watch?v=wyZGf6IhG4w"],
             "name": "Semente De Abóbora",
+            "description":"As propriedades surpreendentes da Semente de Abóbora vêm de sua composição nutricional incomum, incluindo impressionantes níveis de manganês, triptofano, magnésio, cobre, fósforo, zinco, ferro e proteína, assim como pequenas quantidades de vitaminas do complexo B e Vitamina A. Além disso , as sementes de abóbora têm fitoesteróis, um composto orgânico que também contribui para uma vida mais saudável.",
             "price250g":12.60,
             "price500g":25,
             "price1K":48,
-            "image": "SementeDeAbóbora"
+            "image": "SementeDeAbóbora",
+            "nameUrl":"Benefícios da Semente de Abóbora - Para Que Serve? Emagrece? [RECEITA e DICAS]",
+            "videoLinks":["https://www.youtube.com/watch?v=2S8uJDfZL_Y"]
   
         }
     ]
