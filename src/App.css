@@ -15,17 +15,20 @@ body {
   text-align: center;
 }
 
-.header {
-  background-color: #333;
-  font-size: 0.9rem;
-  color: #fff;
+.user-actions svg:hover {
+  color: #007bff; /* Cor quando o mouse passa por cima */
 }
 
-.header-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* Estilo para a quantidade no ícone do carrinho */
+.cart-quantity {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
 }
 
 .social-icons {
@@ -37,7 +40,7 @@ body {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .history {
@@ -45,12 +48,16 @@ body {
 }
 
 .textP {
-  text-align: justify; /* Justifica o texto */
-  margin: 0 auto; /* Centraliza o bloco de texto */
-  max-width: 800px; /* Define uma largura máxima para o texto */
+  text-align: justify;
+  font-size: 18px; /* Reduzi o tamanho para facilitar a leitura na web */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px; /* Adicionei um espaçamento interno para melhor separação do conteúdo */
 }
 .ContactCss {
   text-align: center; /* Centraliza todo o conteúdo do componente Contact */
+  font-size: 25px;
 }
 
 .ContactCss h1,
@@ -123,24 +130,73 @@ td {
 
 /* Navegação */
 
+/* Estilos padrão do menu */
 .navbar {
   background-color: #333;
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 2px;
+  width: 100%; /* Ocupa toda a largura */
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  width: 100%; /* Ocupa toda a largura */
+  justify-content: space-between; /* Espaça os itens */
 }
 
 .navbar a {
   text-decoration: none;
   color: #fff;
-  transition: color 0.3s, transform 0.3s;
-  display: inline-block;
+  transition: color 0.3s;
+  padding: 10px 20px;
 }
 
 .navbar a:hover {
   color: #ff6600;
-  transform: scale(1.1);
 }
+
+/* Estilos para telas menores, onde o menu vira coluna */
+@media screen and (max-width: 768px) {
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .show-menu .menu-items {
+    display: flex;
+  }
+}
+
+
 
 /* Artigo */
 
@@ -183,6 +239,10 @@ td {
     aspect-ratio: 1;
     object-fit: cover;
   }
+}
+.centerList{
+  display: flex;
+  justify-content: center;
 }
 .product-detail-page {
   display: flex;
@@ -234,9 +294,25 @@ td {
   margin-bottom: 15px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #edba00ad;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff;
+  margin: 15px;
+  max-width: 300px;
+}
+
 .card-container {
   display: flex; /* Exibe os cards em linha */
-  justify-content: space-between; /* Distribui o espaço entre os cards */
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -282,4 +358,28 @@ td {
 .home-map {
   flex: 1;
   margin-right: 20px;
+}
+
+/* Estilos para dispositivos menores, como smartphones */
+@media only screen and (max-width: 600px) {
+  /* Defina estilos específicos para telas menores */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para tablets */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para dispositivos maiores, como desktops */
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para desktops */
+  body {
+    font-size: 18px;
+  }
 }

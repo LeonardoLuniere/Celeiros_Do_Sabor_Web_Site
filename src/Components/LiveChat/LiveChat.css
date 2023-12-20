@@ -1,0 +1,75 @@
+/* LiveChat.css */
+
+/* Estilos para a janela do chat */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para o campo de pesquisa */
+  .search-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para as mensagens */
+  .message-container {
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .message {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para a mensagem do usuário */
+  .user {
+    background-color: #d3e0dc;
+  }
+  
+  /* Estilos para a mensagem do agente */
+  .agent {
+    background-color: #e6f3ff;
+  }
+  
+  /* Estilos para a caixa de entrada de mensagem */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos específicos para o botão de enviar */
+  .input-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o botão encolha */
+  }
+  
+  .input-container button:hover {
+    background-color: #0056b3;
+  }
+  

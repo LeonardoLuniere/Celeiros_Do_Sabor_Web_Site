@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TweenMax } from 'gsap';
 
 const menuItems = [
   { title: 'Página Inicial', link: '/' },
-  { title: 'Login', link: '/login' },
   { title: 'Produtos', link: '/store' },
   { title: 'About', link: '/about' },
   { title: 'Contato', link: '/contact' },
-  { title: '🛒', link: '/cart', icon: '🛒' }, 
 ];
 
 const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   useEffect(() => {
     const items = document.querySelectorAll('.navbar a');
     items.forEach(item => {
@@ -23,14 +23,26 @@ const Navigation = () => {
       });
     });
   }, []);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <nav className="navbar">
-    {menuItems.map((item, index) => (
-      <a key={index} href={item.link} className={item.title}>
-        {item.title}
-      </a>
-    ))}
-  </nav>
+    <nav className={`navbar ${showMenu ? 'show-menu' : ''}`}>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className="menu-items">
+        {menuItems.map((item, index) => (
+          <a key={index} href={item.link} className={item.title}>
+            {item.title}
+          </a>
+        ))}
+      </div>
+    </nav>
   );
 };
 

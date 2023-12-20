@@ -2,10 +2,13 @@ import React from 'react';
 import About from '../Pages/About';
 import Contact from '../Pages/Contact';
 import LeafletMap from '../Components/Maps/LeafletMap';
+import Carousel from '../Components/Carrosel/Carousel';
 
 export default function Home(products) {
   return (
     <div>
+      <br/>
+      <Carousel />
       <br/>
       <About />
       <br/>

@@ -1,0 +1,170 @@
+/* Estilo para o cabeçalho */
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Estilo para a área superior do cabeçalho */
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  /* Estilo para o menu principal */
+  .main-mid-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Estilo para a barra principal */
+  .main-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  /* Estilo para o logo */
+  .Logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Estilo para a barra de pesquisa */
+  .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para os ícones sociais */
+  .social-icons a {
+    margin-right: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  /* Estilo para os ícones de usuário, coração e carrinho */
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-actions svg {
+    margin-right: 15px;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o componente de login */
+  .login-overlay {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form {
+    text-align: center;
+  }
+  
+  .login-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .input {
+    position: relative;
+    font-size: 1em;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+  }
+  
+  .input > input[type="text"] {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 .325em;
+    z-index: 1;
+  
+    /* Shadow styles on focus */
+    &:focus + span {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .input > span {
+    transform: scale(.993, .94);
+    transition: transform .5s, opacity .25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  
+    /* Fancy shadow styles */
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
+  }

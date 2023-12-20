@@ -11,11 +11,11 @@
    */
    .content {
     height: 520px;
-    width: 935px;
+    width: 850px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     margin-top: 300px; /* Ajuste o valor conforme necessário para posicionar abaixo do cabeçalho */
@@ -24,7 +24,7 @@
   .slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* Alteração para 'cover' */
   }
   
   

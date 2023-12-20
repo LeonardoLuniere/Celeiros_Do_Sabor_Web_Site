@@ -1,20 +1,17 @@
-// Cart.jsx
+// Cart.js
 import React from 'react';
+import YourComponent from '../Components/ShoppingCart/YourComponent'; // Verifique se o nome do componente está correto
 
-function Cart({ products }) {
-  // Verificando se 'products' é undefined ou vazio
-  if (!products || products.length === 0) {
-    return <div>Carrinho vazio</div>;
-  }
-
+function Cart({ cartItems, handleAddToCart }) {
   return (
-    <div>
-      <h2>Carrinho</h2>
-      {products.map((product, index) => (
-        <div key={index} className="product-card">
-          <h3>{product.name}</h3>
-          <p>Preço: R${product.price.toFixed(2)}</p>
-        </div>
+    <div className="cart">
+      {cartItems.map((item, index) => (
+        <YourComponent
+          key={index}
+          productName={item.name}
+          total={item.total}
+          handleAddToCart={handleAddToCart} // Se necessário, passe a função de manipulação aqui
+        />
       ))}
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Carousel.css';
 
@@ -29,14 +28,14 @@ const Carousel = () => {
     <div className="content">
       <div className="slides">
         {products.map((product, index) => (
-          <Link key={product.id} to={`/store/${product.id}`} className={`slide ${index === activeSlide ? 'active' : ''}`}>
+          <div key={product.id} className={`slide ${index === activeSlide ? 'active' : ''}`}>
             <img
               src={`${process.env.PUBLIC_URL}/Image/${product.image}.jpg`}
               alt={`Product ${index + 1}`}
               className="full-screen-image"
               style={{ display: index === activeSlide ? 'block' : 'none' }}
             />
-          </Link>
+          </div>
         ))}
       </div>
     </div>

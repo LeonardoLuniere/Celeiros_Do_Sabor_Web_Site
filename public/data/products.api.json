@@ -115,6 +115,7 @@
             "price250g":8.50,
             "price500g":17,
             "price1K":34,
+            "image": "castanhaDoPará",
             "nameUrl":"Benefícios da Castanha do Pará - Para Que Serve? Faz Mal? [DICAS e CUIDADOS]",
             "videoLinks":["https://www.youtube.com/watch?v=Ra8sm_R8Lso"]
   
@@ -126,6 +127,7 @@
             "price250g":15.50,
             "price500g":30,
             "price1K":60,
+            "image": "castanhaDoPará",
             "nameUrl":"Benefícios da Castanha do Pará - Para Que Serve? Faz Mal? [DICAS e CUIDADOS]",
             "videoLinks":["https://www.youtube.com/watch?v=Ra8sm_R8Lso"]
   
@@ -133,6 +135,7 @@
         {
             "id": 12,
             "name": "Composto Suplementar",
+            "image": "composotSuplementar",
             "description":"CATUABA_30%, GUARANÁ_EM_PÓ_10%, MACA_PERUANA_30%, TRIBULUS_TERRESTRIS_30%  ",
             "ingrendients":{
                "ingrendient1": "CATUABA_30%",
@@ -140,7 +143,9 @@
                "ingrendient3":"MACA_PERUANA_30%",
                "ingrendient4":"TRIBULUS_TERRESTRIS_30%"
             },
-            "price250g":19.50
+            "price250g":19.50,
+            "price500g":0,
+            "price1K":0
         },
         {
             "id": 13,
@@ -159,6 +164,8 @@
             "name": "Guarana Em Pó",
             "description":"Como eu disse, o pó é feito com as sementes do guaraná, só que trituradas. E o bom é que ele tem bastante cafeína e outros nutrientes, como vitaminas A e B1, ferro, potássio, cálcio, magnésio e fósforo.",
             "price250g":18,
+            "price500g":0,
+            "price1K":0,
             "image": "GuaranaEmPó",
             "nameUrl":"Guaraná: Origem, Benefícios E Como Usar Seu Pó Para Obter Os Maiores Benefícios!| Dr. Rafael Freitas",
             "videoLinks":["https://www.youtube.com/watch?v=pPqxQiVmTMw"]
@@ -179,6 +186,7 @@
         {
             "id": 16,
             "name": "Mix De Amendoas",
+            "image" :"mixDeAmendoas",
             "description":"AMÊNDOA , AMENDOIM,CASTANHA DE CAJU,CASTANHA Do Pará, CRANBERRY, NOZ E UVA PASSA  ",
             "ingrendients":{
               "ingrendient1": "AMÊNDOA",
@@ -198,6 +206,8 @@
             "name": "Óleo de Copaíba - 35ml",
             "description":"O Óleo de Copaíba é super indicado para combater a acne e a oleosidade, tanto da pele, quanto do cabelo. Ele possui ação antimicrobiana e possui efeito relaxante sobre os músculos, sendo eficaz para dores musculares e até mesmo para enxaquecas.",
             "price250g":8.30,
+            "price500g":0,
+            "price1K":0,
             "image": "ÓleodeCopaíba",
             "nameUrl":"7 BENEFICIOS DO ÓLEO DE COPAÍBA | Dr. Dayan Siebra",
             "videoLinks":["https://www.youtube.com/watch?v=2zHHDRiKbnI"]
@@ -268,6 +278,8 @@
             "name": "Colorau",
             "description":"Um popular condimento alimentar, é o pó do urucum, também chamado de colorífico e falso açafrão, especialmente devido à sua forte cor vermelha. Ele é feito a partir da trituração das sementes do urucuzeiro – árvore típica das regiões tropicais da América do Sul.",
             "price250g":6,
+            "price500g":0,
+            "price1K":0,
             "image": "Colorau",
             "nameUrl":"PODEROSO ANTI-INFLAMATÓRIO, ANTIOXIDANTE e Mais! Benefícios do Urucum, Como Usar e Dicas",
             "videoLinks":["https://www.youtube.com/watch?v=9KyeGja2zg8"]
@@ -295,6 +307,18 @@
             "image": "SementeDeAbóbora",
             "nameUrl":"Benefícios da Semente de Abóbora - Para Que Serve? Emagrece? [RECEITA e DICAS]",
             "videoLinks":["https://www.youtube.com/watch?v=2S8uJDfZL_Y"]
+  
+        },
+        {
+            "id": 26,
+            "name": "Cenoura em Pedaços",
+            "description":"A cenoura é uma raiz que é uma excelente fonte de carotenoides, potássio, fibras e antioxidantes, os quais proporcionam diversos benefícios para a saúde. Além de promover a saúde visual, também ajuda a evitar o envelhecimento precoce, melhorar o sistema imune e a prevenir alguns tipos de câncer.",
+            "price250g":2.00,
+            "price500g":4.00,
+            "price1K":8.00,
+            "image": "cenouraEmPedacos",
+            "nameUrl":"Benefícios da Cenoura - Para Que Serve? Como Usar? [RECEITAS LIGHT e DICAS]",
+            "videoLinks":["https://www.youtube.com/watch?v=80geLSjPWIY"]
   
         }
     ]
