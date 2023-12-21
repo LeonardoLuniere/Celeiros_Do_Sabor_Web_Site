@@ -8,9 +8,10 @@
   /* Estilo para a área superior do cabeçalho */
   .header-top {
     display: flex;
+    background-color: white;
+    border-radius: 0.5em;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
   }
   
   /* Estilo para o menu principal */

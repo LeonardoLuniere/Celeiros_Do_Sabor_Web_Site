@@ -5,65 +5,79 @@ function LiveChat() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [filteredMessages, setFilteredMessages] = useState([]);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    description: '',
+    agreement: false,
+  });
 
   const handleInputChange = (event) => {
     setInput(event.target.value);
   };
 
+  const handleFormChange = (event) => {
+    const { name, value, type, checked } = event.target;
+    const newValue = type === 'checkbox' ? checked : value;
+
+    setFormData({
+      ...formData,
+      [name]: newValue,
+    });
+  };
+
   useEffect(() => {
-    // Filtro das mensagens com base na entrada de pesquisa
-    const filtered = messages.filter(message =>
+    const filtered = messages.filter((message) =>
       message.text.toLowerCase().includes(input.toLowerCase())
     );
     setFilteredMessages(filtered);
   }, [input, messages]);
 
-  const sendMessageToEmailServer = async (message) => {
-    try {
-      // Simulação do envio da mensagem para o servidor de e-mail
-      const response = await fetch('https://myfakeserver.com/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message, recipient: 'caocalpapeis@gmail.com' }),
-      });
+  const sendMessageToEmailServer = async (formData) => {
+    // Aqui você pode implementar a lógica para enviar o formulário para o servidor de e-mail
+    // Pode usar fetch ou axios para fazer a requisição
 
-      // Se a resposta for bem-sucedida (simulação de status 200)
-      if (response.status === 200) {
-        // Simulação de resposta do servidor de e-mail
-        return { success: true, message: 'Mensagem enviada com sucesso!' };
-      } else {
-        return { success: false, message: 'Falha ao enviar a mensagem.' };
-      }
-    } catch (error) {
-      console.error('Erro ao enviar a mensagem:', error);
-      return { success: false, message: 'Erro ao enviar a mensagem.' };
-    }
+    // Exemplo de estrutura do body para envio:
+    // const response = await fetch('URL_DO_SERVIDOR', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(formData),
+    // });
+
+    // Implemente a lógica real de envio aqui
+    // ...
+
+    // Simulação de resposta do servidor de e-mail
+    return { success: true, message: 'Mensagem enviada com sucesso!' };
   };
 
   const handleSendMessage = async () => {
-    if (input.trim() !== '') {
-      const sentMessage = { text: input, sender: 'user' };
-      setMessages([...messages, sentMessage]);
-      setInput('');
+    if (formData.name && formData.email && formData.phoneNumber && formData.agreement) {
+      // Lógica para enviar o formulário para o servidor de e-mail
+      const serverResponse = await sendMessageToEmailServer(formData);
 
-      // Simulação do envio da mensagem para o servidor de e-mail
-      const serverResponse = await sendMessageToEmailServer(input);
-
-      // Se a resposta do servidor de e-mail for bem-sucedida, adicionamos uma mensagem de confirmação ao chat
+      // Manipulação de mensagens e feedbacks baseados na resposta do servidor
       if (serverResponse.success) {
+        const sentMessage = { text: formData.description, sender: 'user' };
+        setMessages([...messages, sentMessage]);
+        setInput('');
+
         setMessages([
           ...messages,
           { text: serverResponse.message, sender: 'agent' },
         ]);
       } else {
-        // Se houver falha no envio da mensagem para o servidor, exibimos uma mensagem de erro no chat
         setMessages([
           ...messages,
           { text: serverResponse.message, sender: 'agent' },
         ]);
       }
+    } else {
+      // Adicione tratamento para os campos do formulário obrigatórios
+      console.log('Preencha todos os campos obrigatórios.');
     }
   };
 
@@ -90,10 +104,13 @@ function LiveChat() {
       <div className="input-container">
         <input
           type="text"
-          value={input}
-          onChange={handleInputChange}
-          placeholder="Digite sua mensagem..."
+          name="name"
+          value={formData.name}
+          onChange={handleFormChange}
+          placeholder="Seu nome"
         />
+        {/* Adicione os outros campos do formulário */}
+        {/* ... */}
         <button onClick={handleSendMessage}>Enviar</button>
       </div>
     </div>
