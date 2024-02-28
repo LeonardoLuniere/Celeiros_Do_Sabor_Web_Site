@@ -1,0 +1,22 @@
+/* About.css */
+.about-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex: 1;
+    padding-right: 20px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  .about-image {
+    max-width: 100%;
+    border-radius: 8px; /* Adapte o raio da borda conforme necessário */
+  }
+  
+  .text-container {
+    flex: 2;
+  }
+  
+  /* Adicione mais estilos conforme necessário para a aparência do texto */
+  

@@ -10,14 +10,14 @@
   }
    */
    .content {
-    height: 520px;
+    height: 651px;
     width: 850px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     margin-top: 300px; /* Ajuste o valor conforme necessário para posicionar abaixo do cabeçalho */
   }
   
