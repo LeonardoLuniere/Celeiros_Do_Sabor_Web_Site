@@ -4,7 +4,7 @@ import Contact from '../Pages/Contact';
 import LeafletMap from '../Components/Maps/LeafletMap';
 import Carousel from '../Components/Carrosel/Carousel';
 
-export default function Home(products) {
+export default function Home() {
   return (
     <div>
       <br/>

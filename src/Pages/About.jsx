@@ -8,7 +8,7 @@ function About() {
         <div className='image-container'>
           <img
             className='about-image'
-            src="./Image/produtosNaturaisHIstory"
+            src="././Image/Produtos-naturais.jpg"
             alt='Descrição da imagem'
           />
         </div>
