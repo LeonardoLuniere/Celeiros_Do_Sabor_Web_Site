@@ -14,7 +14,6 @@ import Carrinho from './Pages/Carrinho';
 import Favorite from './Pages/Favorite';
 
 function App() {
-  // Suponha que você obtenha a lista de produtos de alguma fonte, como uma API.
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (item) => {
     setCartItems(prevCartItems => [...prevCartItems, item]);
